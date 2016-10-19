@@ -6,6 +6,7 @@ import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.infra.Blackhole;
 
 @Fork(value = 3)
 @Warmup(iterations = 4, time = 200, timeUnit = TimeUnit.MILLISECONDS)
@@ -13,7 +14,8 @@ import org.openjdk.jmh.annotations.Warmup;
 public class BenchmarkMain {
 
     @Benchmark
-    public void doit() {
-        Math.pow(33.0, 2);
+    public void doit(Blackhole bh) {
+        double r = Math.pow(33.0, 2);
+        bh.consume(r);
     }
 }
