@@ -1,4 +1,4 @@
-package de.jawb.jmh.benchmark;
+package de.jawb.jmh.benchmark.example.bool;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,15 +12,11 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.infra.Blackhole;
 
-import de.jawb.jmh.benchmark.example.bool.BitSetArray;
-import de.jawb.jmh.benchmark.example.bool.IBoolArray;
-import de.jawb.jmh.benchmark.example.bool.SimpleArray;
-
 @State(Scope.Benchmark)
 @Fork(value = 1)
 @Warmup(iterations = 4, time = 200, timeUnit = TimeUnit.MILLISECONDS)
 @Measurement(iterations = 3, time = 500, timeUnit = TimeUnit.MILLISECONDS)
-public class BenchmarkMain {
+public class BoolArrayVsBitSetBenchmark {
 
     @Param({ "100", "1000", "10000", "100000", "1000000", "10000000" })
     private int        length;

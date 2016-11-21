@@ -1,0 +1,590 @@
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 100)
+
+# Run progress: 0,00% complete, ETA 00:00:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 25752771,388 ops/s
+# Warmup Iteration   2: 28679840,713 ops/s
+# Warmup Iteration   3: 31114864,887 ops/s
+# Warmup Iteration   4: 31370878,614 ops/s
+Iteration   1: 30789595,022 ops/s
+Iteration   2: 27431931,582 ops/s
+Iteration   3: 32076079,332 ops/s
+
+
+Result "bitset":
+  30099201,979 ±(99.9%) 43745042,281 ops/s [Average]
+  (min, avg, max) = (27431931,582, 30099201,979, 32076079,332), stdev = 2397813,378
+  CI (99.9%): [≈ 0, 73844244,260] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 1000)
+
+# Run progress: 3,95% complete, ETA 00:01:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 13227893,094 ops/s
+# Warmup Iteration   2: 17372122,133 ops/s
+# Warmup Iteration   3: 18301992,461 ops/s
+# Warmup Iteration   4: 18454605,757 ops/s
+Iteration   1: 11939189,541 ops/s
+Iteration   2: 9781550,854 ops/s
+Iteration   3: 13818744,950 ops/s
+
+
+Result "bitset":
+  11846495,115 ±(99.9%) 36855833,949 ops/s [Average]
+  (min, avg, max) = (9781550,854, 11846495,115, 13818744,950), stdev = 2020192,623
+  CI (99.9%): [≈ 0, 48702329,063] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 10000)
+
+# Run progress: 7,89% complete, ETA 00:01:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 4662499,470 ops/s
+# Warmup Iteration   2: 5178093,531 ops/s
+# Warmup Iteration   3: 6032549,913 ops/s
+# Warmup Iteration   4: 4947037,759 ops/s
+Iteration   1: 5417681,058 ops/s
+Iteration   2: 4334557,603 ops/s
+Iteration   3: 7121371,214 ops/s
+
+
+Result "bitset":
+  5624536,625 ±(99.9%) 25630154,285 ops/s [Average]
+  (min, avg, max) = (4334557,603, 5624536,625, 7121371,214), stdev = 1404875,241
+  CI (99.9%): [≈ 0, 31254690,910] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 100000)
+
+# Run progress: 11,84% complete, ETA 00:01:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 857694,105 ops/s
+# Warmup Iteration   2: 933794,944 ops/s
+# Warmup Iteration   3: 1113602,131 ops/s
+# Warmup Iteration   4: 1091920,429 ops/s
+Iteration   1: 1108609,014 ops/s
+Iteration   2: 945698,675 ops/s
+Iteration   3: 1076525,420 ops/s
+
+
+Result "bitset":
+  1043611,036 ±(99.9%) 1574409,177 ops/s [Average]
+  (min, avg, max) = (945698,675, 1043611,036, 1108609,014), stdev = 86298,680
+  CI (99.9%): [≈ 0, 2618020,214] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 1000000)
+
+# Run progress: 15,78% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 949029,783 ops/s
+# Warmup Iteration   2: 911468,974 ops/s
+# Warmup Iteration   3: 887804,405 ops/s
+# Warmup Iteration   4: 988838,917 ops/s
+Iteration   1: 1038768,562 ops/s
+Iteration   2: 1081349,261 ops/s
+Iteration   3: 1051254,087 ops/s
+
+
+Result "bitset":
+  1057123,970 ±(99.9%) 399333,633 ops/s [Average]
+  (min, avg, max) = (1038768,562, 1057123,970, 1081349,261), stdev = 21888,824
+  CI (99.9%): [657790,338, 1456457,603] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.bitset
+# Parameters: (length = 10000000)
+
+# Run progress: 19,73% complete, ETA 00:00:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 85628,991 ops/s
+# Warmup Iteration   2: 93393,659 ops/s
+# Warmup Iteration   3: 78344,027 ops/s
+# Warmup Iteration   4: 70765,488 ops/s
+Iteration   1: 90242,283 ops/s
+Iteration   2: 90158,062 ops/s
+Iteration   3: 86908,113 ops/s
+
+
+Result "bitset":
+  89102,820 ±(99.9%) 34683,839 ops/s [Average]
+  (min, avg, max) = (86908,113, 89102,820, 90242,283), stdev = 1901,138
+  CI (99.9%): [54418,981, 123786,658] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 100)
+
+# Run progress: 23,67% complete, ETA 00:00:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 17617932,441 ops/s
+# Warmup Iteration   2: 18401861,647 ops/s
+# Warmup Iteration   3: 20081659,737 ops/s
+# Warmup Iteration   4: 18833479,081 ops/s
+Iteration   1: 15429752,319 ops/s
+Iteration   2: 19722562,165 ops/s
+Iteration   3: 18768845,624 ops/s
+
+
+Result "simple":
+  17973720,036 ±(99.9%) 41124210,453 ops/s [Average]
+  (min, avg, max) = (15429752,319, 17973720,036, 19722562,165), stdev = 2254156,742
+  CI (99.9%): [≈ 0, 59097930,488] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 1000)
+
+# Run progress: 27,62% complete, ETA 00:00:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 2342786,828 ops/s
+# Warmup Iteration   2: 2706985,302 ops/s
+# Warmup Iteration   3: 2815635,211 ops/s
+# Warmup Iteration   4: 2798845,415 ops/s
+Iteration   1: 2431430,001 ops/s
+Iteration   2: 2544075,900 ops/s
+Iteration   3: 2687777,372 ops/s
+
+
+Result "simple":
+  2554427,758 ±(99.9%) 2344078,017 ops/s [Average]
+  (min, avg, max) = (2431430,001, 2554427,758, 2687777,372), stdev = 128486,826
+  CI (99.9%): [210349,741, 4898505,774] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 10000)
+
+# Run progress: 31,56% complete, ETA 00:00:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 243811,176 ops/s
+# Warmup Iteration   2: 305913,519 ops/s
+# Warmup Iteration   3: 306877,675 ops/s
+# Warmup Iteration   4: 311934,361 ops/s
+Iteration   1: 296403,734 ops/s
+Iteration   2: 267565,969 ops/s
+Iteration   3: 304939,848 ops/s
+
+
+Result "simple":
+  289636,517 ±(99.9%) 357292,085 ops/s [Average]
+  (min, avg, max) = (267565,969, 289636,517, 304939,848), stdev = 19584,385
+  CI (99.9%): [≈ 0, 646928,602] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 100000)
+
+# Run progress: 35,51% complete, ETA 00:00:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 26110,607 ops/s
+# Warmup Iteration   2: 21878,994 ops/s
+# Warmup Iteration   3: 26305,202 ops/s
+# Warmup Iteration   4: 28947,889 ops/s
+Iteration   1: 29182,586 ops/s
+Iteration   2: 26509,217 ops/s
+Iteration   3: 27962,816 ops/s
+
+
+Result "simple":
+  27884,873 ±(99.9%) 24417,178 ops/s [Average]
+  (min, avg, max) = (26509,217, 27884,873, 29182,586), stdev = 1338,388
+  CI (99.9%): [3467,695, 52302,051] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 1000000)
+
+# Run progress: 39,45% complete, ETA 00:00:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 2550,011 ops/s
+# Warmup Iteration   2: 2438,652 ops/s
+# Warmup Iteration   3: 1893,493 ops/s
+# Warmup Iteration   4: 2686,975 ops/s
+Iteration   1: 2802,642 ops/s
+Iteration   2: 2745,062 ops/s
+Iteration   3: 2445,395 ops/s
+
+
+Result "simple":
+  2664,366 ±(99.9%) 3499,285 ops/s [Average]
+  (min, avg, max) = (2445,395, 2664,366, 2802,642), stdev = 191,808
+  CI (99.9%): [≈ 0, 6163,651] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.bool.BoolArrayVsBitSetBenchmark.simple
+# Parameters: (length = 10000000)
+
+# Run progress: 43,40% complete, ETA 00:00:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 237,168 ops/s
+# Warmup Iteration   2: 259,565 ops/s
+# Warmup Iteration   3: 260,026 ops/s
+# Warmup Iteration   4: 249,260 ops/s
+Iteration   1: 226,964 ops/s
+Iteration   2: 261,724 ops/s
+Iteration   3: 228,691 ops/s
+
+
+Result "simple":
+  239,126 ±(99.9%) 357,385 ops/s [Average]
+  (min, avg, max) = (226,964, 239,126, 261,724), stdev = 19,589
+  CI (99.9%): [≈ 0, 596,512] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.json.JacksonVsGsonBenchmark.gson
+
+# Run progress: 47,34% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 136,917 ops/s
+# Warmup Iteration   2: 478,504 ops/s
+# Warmup Iteration   3: 506,129 ops/s
+# Warmup Iteration   4: 582,200 ops/s
+Iteration   1: 521,710 ops/s
+Iteration   2: 596,943 ops/s
+Iteration   3: 599,070 ops/s
+
+
+Result "gson":
+  572,574 ±(99.9%) 803,868 ops/s [Average]
+  (min, avg, max) = (521,710, 572,574, 599,070), stdev = 44,063
+  CI (99.9%): [≈ 0, 1376,442] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.json.JacksonVsGsonBenchmark.jackson
+
+# Run progress: 51,29% complete, ETA 00:00:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,693 ops/s
+# Warmup Iteration   2: 176,994 ops/s
+# Warmup Iteration   3: 344,211 ops/s
+# Warmup Iteration   4: 393,152 ops/s
+Iteration   1: 278,955 ops/s
+Iteration   2: 231,475 ops/s
+Iteration   3: 428,067 ops/s
+
+
+Result "jackson":
+  312,832 ±(99.9%) 1871,457 ops/s [Average]
+  (min, avg, max) = (231,475, 312,832, 428,067), stdev = 102,581
+  CI (99.9%): [≈ 0, 2184,290] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 4 iterations, 1000 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.jvm.ForLoopGlobalVsLocalBenchmark.benchmarkForLoop
+
+# Run progress: 55,23% complete, ETA 00:00:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 4978,617 ops/s
+# Warmup Iteration   2: 5762,569 ops/s
+# Warmup Iteration   3: 4414,739 ops/s
+# Warmup Iteration   4: 4751,259 ops/s
+Iteration   1: 6997,840 ops/s
+Iteration   2: 9730,119 ops/s
+Iteration   3: 6267,476 ops/s
+Iteration   4: 5058,923 ops/s
+
+# Run progress: 63,46% complete, ETA 00:00:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 9144,435 ops/s
+# Warmup Iteration   2: 7211,213 ops/s
+# Warmup Iteration   3: 4165,719 ops/s
+# Warmup Iteration   4: 3984,169 ops/s
+Iteration   1: 5561,011 ops/s
+Iteration   2: 8435,551 ops/s
+Iteration   3: 8266,717 ops/s
+Iteration   4: 9097,535 ops/s
+
+
+Result "benchmarkForLoop":
+  7426,896 ±(99.9%) 3266,843 ops/s [Average]
+  (min, avg, max) = (5058,923, 7426,896, 9730,119), stdev = 1708,622
+  CI (99.9%): [4160,054, 10693,739] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 4 iterations, 1000 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.jvm.ForLoopGlobalVsLocalBenchmark.benchmarkForLoopOptimized
+
+# Run progress: 71,70% complete, ETA 00:00:19
+# Fork: 1 of 2
+# Warmup Iteration   1: 6113,222 ops/s
+# Warmup Iteration   2: 7999,667 ops/s
+# Warmup Iteration   3: 8999,220 ops/s
+# Warmup Iteration   4: 9327,813 ops/s
+Iteration   1: 8469,050 ops/s
+Iteration   2: 8892,054 ops/s
+Iteration   3: 8374,578 ops/s
+Iteration   4: 8083,943 ops/s
+
+# Run progress: 79,93% complete, ETA 00:00:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 9253,934 ops/s
+# Warmup Iteration   2: 9570,883 ops/s
+# Warmup Iteration   3: 8939,093 ops/s
+# Warmup Iteration   4: 8250,390 ops/s
+Iteration   1: 9403,082 ops/s
+Iteration   2: 8298,578 ops/s
+Iteration   3: 9271,163 ops/s
+Iteration   4: 8945,317 ops/s
+
+
+Result "benchmarkForLoopOptimized":
+  8717,221 ±(99.9%) 918,416 ops/s [Average]
+  (min, avg, max) = (8083,943, 8717,221, 9403,082), stdev = 480,349
+  CI (99.9%): [7798,805, 9635,636] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.uniquechars.UniqueCharsBenchmark.uniqueChars_A_1
+
+# Run progress: 88,16% complete, ETA 00:00:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 193434,339 ops/s
+# Warmup Iteration   2: 771839,230 ops/s
+# Warmup Iteration   3: 956055,969 ops/s
+# Warmup Iteration   4: 977330,852 ops/s
+Iteration   1: 992875,381 ops/s
+Iteration   2: 651471,712 ops/s
+Iteration   3: 989794,838 ops/s
+
+
+Result "uniqueChars_A_1":
+  878047,310 ±(99.9%) 3579897,633 ops/s [Average]
+  (min, avg, max) = (651471,712, 878047,310, 992875,381), stdev = 196226,269
+  CI (99.9%): [≈ 0, 4457944,944] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.uniquechars.UniqueCharsBenchmark.uniqueChars_A_2
+
+# Run progress: 92,11% complete, ETA 00:00:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 198971,106 ops/s
+# Warmup Iteration   2: 445168,147 ops/s
+# Warmup Iteration   3: 620061,893 ops/s
+# Warmup Iteration   4: 868981,659 ops/s
+Iteration   1: 953527,489 ops/s
+Iteration   2: 897246,483 ops/s
+Iteration   3: 955085,115 ops/s
+
+
+Result "uniqueChars_A_2":
+  935286,362 ±(99.9%) 601180,035 ops/s [Average]
+  (min, avg, max) = (897246,483, 935286,362, 955085,115), stdev = 32952,706
+  CI (99.9%): [334106,328, 1536466,397] (assumes normal distribution)
+
+
+# JMH 1.15 (released 52 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Xmx1256M -Xms1256M
+# Warmup: 4 iterations, 200 ms each
+# Measurement: 3 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.jawb.jmh.benchmark.example.uniquechars.UniqueCharsBenchmark.uniqueChars_B_1
+
+# Run progress: 96,05% complete, ETA 00:00:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 365724,182 ops/s
+# Warmup Iteration   2: 749429,829 ops/s
+# Warmup Iteration   3: 631666,953 ops/s
+# Warmup Iteration   4: 681419,940 ops/s
+Iteration   1: 850277,769 ops/s
+Iteration   2: 835962,719 ops/s
+Iteration   3: 747950,735 ops/s
+
+
+Result "uniqueChars_B_1":
+  811397,074 ±(99.9%) 1010891,339 ops/s [Average]
+  (min, avg, max) = (747950,735, 811397,074, 850277,769), stdev = 55410,365
+  CI (99.9%): [≈ 0, 1822288,414] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:07
+
+Benchmark                                                              (length)   Mode  Cnt         Score          Error  Units
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                            100  thrpt    3  30099201,979 ± 43745042,281  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                           1000  thrpt    3  11846495,115 ± 36855833,949  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                          10000  thrpt    3   5624536,625 ± 25630154,285  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                         100000  thrpt    3   1043611,036 ±  1574409,177  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                        1000000  thrpt    3   1057123,970 ±   399333,633  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.bitset                       10000000  thrpt    3     89102,820 ±    34683,839  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                            100  thrpt    3  17973720,036 ± 41124210,453  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                           1000  thrpt    3   2554427,758 ±  2344078,017  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                          10000  thrpt    3    289636,517 ±   357292,085  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                         100000  thrpt    3     27884,873 ±    24417,178  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                        1000000  thrpt    3      2664,366 ±     3499,285  ops/s
+d.j.j.b.e.bool.BoolArrayVsBitSetBenchmark.simple                       10000000  thrpt    3       239,126 ±      357,385  ops/s
+d.j.j.b.e.json.JacksonVsGsonBenchmark.gson                                  N/A  thrpt    3       572,574 ±      803,868  ops/s
+d.j.j.b.e.json.JacksonVsGsonBenchmark.jackson                               N/A  thrpt    3       312,832 ±     1871,457  ops/s
+d.j.j.b.e.jvm.ForLoopGlobalVsLocalBenchmark.benchmarkForLoop                N/A  thrpt    8      7426,896 ±     3266,843  ops/s
+d.j.j.b.e.jvm.ForLoopGlobalVsLocalBenchmark.benchmarkForLoopOptimized       N/A  thrpt    8      8717,221 ±      918,416  ops/s
+d.j.j.b.e.uniquechars.UniqueCharsBenchmark.uniqueChars_A_1                  N/A  thrpt    3    878047,310 ±  3579897,633  ops/s
+d.j.j.b.e.uniquechars.UniqueCharsBenchmark.uniqueChars_A_2                  N/A  thrpt    3    935286,362 ±   601180,035  ops/s
+d.j.j.b.e.uniquechars.UniqueCharsBenchmark.uniqueChars_B_1                  N/A  thrpt    3    811397,074 ±  1010891,339  ops/s
