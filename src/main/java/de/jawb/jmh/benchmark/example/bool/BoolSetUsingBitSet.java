@@ -2,11 +2,11 @@ package de.jawb.jmh.benchmark.example.bool;
 
 import java.util.BitSet;
 
-public class BitSetArray implements IBoolArray {
+public class BoolSetUsingBitSet implements IBoolSet {
 
     private BitSet data;
 
-    public BitSetArray(int length) {
+    public BoolSetUsingBitSet(int length) {
         data = new BitSet(length);
     }
 
@@ -14,13 +14,6 @@ public class BitSetArray implements IBoolArray {
     public boolean get(int i) {
         return data.get(i);
     }
-
-//    @Override
-//    public boolean set(int i) {
-//        boolean old = get(i);
-//        data.set(i);
-//        return old;
-//    }
     
     @Override
     public void set(int i) {
@@ -40,5 +33,19 @@ public class BitSetArray implements IBoolArray {
     @Override
     public int cardinality() {
         return data.cardinality();
+    }
+    
+    @Override
+    public String toString() {
+        return "BitSetArray " + this.data.toString();
+    }
+    
+    public static void main(String[] args) {
+        BoolSetUsingBitSet a = new BoolSetUsingBitSet(10);
+        a.set(1);
+        a.set(3);
+        a.set(5);
+        
+        System.out.println(a.get(7));
     }
 }

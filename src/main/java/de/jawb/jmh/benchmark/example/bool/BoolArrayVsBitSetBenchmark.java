@@ -14,23 +14,24 @@ import org.openjdk.jmh.infra.Blackhole;
 
 @State(Scope.Benchmark)
 @Fork(value = 1)
-@Warmup(iterations = 4, time = 200, timeUnit = TimeUnit.MILLISECONDS)
-@Measurement(iterations = 3, time = 500, timeUnit = TimeUnit.MILLISECONDS)
+@Warmup(iterations = 3, time = 500, timeUnit = TimeUnit.MILLISECONDS)
+@Measurement(iterations = 6, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
 public class BoolArrayVsBitSetBenchmark {
-
-    @Param({ "100", "1000", "10000", "100000", "1000000", "10000000" })
-    private int        length;
-
-    private IBoolArray simple;
-    private IBoolArray bitset;
-
+    
+//    @Param({ "100", "1000", "10000", "100000", "1000000", "10000000" })
+    @Param({ "10000000" })
+    private int      length;
+    
+    private IBoolSet primitive;
+    private IBoolSet bitset;
+    
     @Setup
     public void setup() {
-        simple = new SimpleArray(length);
-        bitset = new BitSetArray(length);
+        primitive = new BoolSetUsingPrimitiveArray(length);
+        bitset = new BoolSetUsingBitSet(length);
     }
-
-    private void doit(Blackhole bh, IBoolArray arr) {
+    
+    private void doit(Blackhole bh, IBoolSet arr) {
         for (int i = 1; i < arr.length(); i *= 10) {
             arr.set(i);
         }
@@ -40,12 +41,12 @@ public class BoolArrayVsBitSetBenchmark {
         bh.consume(arr.cardinality());
         arr.reset();
     }
-
+    
     @Benchmark
-    public void simple(Blackhole bh) {
-        doit(bh, simple);
+    public void primitive(Blackhole bh) {
+        doit(bh, primitive);
     }
-
+    
     @Benchmark
     public void bitset(Blackhole bh) {
         doit(bh, bitset);

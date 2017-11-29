@@ -1,6 +1,5 @@
 package de.jawb.jmh.benchmark.example.json;
 
-import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.openjdk.jmh.annotations.Benchmark;
@@ -16,13 +15,12 @@ import de.jawb.jmh.benchmark.example.json.model.PersonLoader.Mapper;
 
 @State(Scope.Benchmark)
 @Fork(value = 1)
-@Warmup(iterations = 4, time = 200, timeUnit = TimeUnit.MILLISECONDS)
-@Measurement(iterations = 3, time = 500, timeUnit = TimeUnit.MILLISECONDS)
+@Warmup(iterations = 3, time = 500, timeUnit = TimeUnit.MILLISECONDS)
+@Measurement(iterations = 6, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
 public class JacksonVsGsonBenchmark {
 
     @Benchmark
     public void jackson(Blackhole bh) {
-        final Hashtable<String, String> jndiProperties = new Hashtable<String, String>();
         bh.consume(PersonLoader.load(Mapper.Jackson));
     }
 

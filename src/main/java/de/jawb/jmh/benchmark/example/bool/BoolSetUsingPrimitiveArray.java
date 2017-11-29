@@ -2,41 +2,34 @@ package de.jawb.jmh.benchmark.example.bool;
 
 import java.util.Arrays;
 
-public class SimpleArray implements IBoolArray {
-
+public class BoolSetUsingPrimitiveArray implements IBoolSet {
+    
     private boolean[] data;
-
-    public SimpleArray(int length) {
+    
+    public BoolSetUsingPrimitiveArray(int length) {
         data = new boolean[length];
     }
-
+    
     @Override
     public boolean get(int i) {
         return data[i];
     }
-
-//    @Override
-//    public boolean set(int i) {
-//        boolean old = get(i);
-//        data[i] = true;
-//        return old;
-//    }
     
     @Override
     public void set(int i) {
         data[i] = true;
     }
-
+    
     @Override
     public void reset() {
         Arrays.fill(data, false);
     }
-
+    
     @Override
     public int length() {
         return data.length;
     }
-
+    
     @Override
     public int cardinality() {
         int i = 0;
@@ -46,5 +39,10 @@ public class SimpleArray implements IBoolArray {
             }
         }
         return i;
+    }
+    
+    @Override
+    public String toString() {
+        return "PrimitiveBoolSet " + Arrays.toString(data);
     }
 }
