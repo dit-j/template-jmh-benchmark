@@ -20,7 +20,6 @@ import org.openjdk.jmh.infra.Blackhole;
 @Measurement(iterations = 100, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
 public class BoolArrayVsBitSetBenchmark {
 
-
     @Param({ "900000000" })
     private int      length;
 
@@ -43,7 +42,6 @@ public class BoolArrayVsBitSetBenchmark {
         bh.consume(arr.cardinality());
         arr.reset();
     }
-
 
     @Benchmark
     @BenchmarkMode(Mode.SingleShotTime)
