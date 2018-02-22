@@ -6,6 +6,6 @@ echo.
 echo ------------ START BENCHMARK ------------
 echo. 
 
-java -Xmx1256M -Xms1256M -jar target/benchmarks.jar
+java -Xmx2256M -Xms1256M -jar target/benchmarks.jar
 
 pause
