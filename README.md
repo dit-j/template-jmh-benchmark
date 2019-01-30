@@ -5,7 +5,7 @@ Simple JMH template project
 # How to start
 
 1. ```mvn clean package```
-2. ```java -Xmx1256M -Xms1256M -jar target/benchmarks.jar```
+2. ```java -jar target/benchmarks.jar```
 
 # Benchmark results
 
@@ -16,4 +16,6 @@ Benchmark                  Mode  Cnt      Score      Error  Units
 SimpleBenchmark.dec_all   thrpt   10  34561,455 ± 1971,310  ops/s
 SimpleBenchmark.dec_half  thrpt   10  26678,700 ± 2426,754  ops/s
 
-dec_all wins, cause more ops/s [operations per second]
+```
+
+*dec_all* wins, cause more ops/s [operations per second]
